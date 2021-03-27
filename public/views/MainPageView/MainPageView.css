@@ -1,0 +1,382 @@
+.main-page__content {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgba(237, 238, 240, 1);
+}
+
+.header {
+    width: 96%;
+    margin: 1% 2% 2% 2%;
+    max-height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__stats {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+
+    font-size: 2rem;
+}
+
+.header__item {
+    margin: 0 2% 0 0;
+
+    background: rgba(237, 238, 255, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(31, 38, 135, 0.3);
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+
+    padding: 0.1em 0.5em;
+}
+
+.header__stats-calendar {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    transition: opacity 0.3s ease-out;
+}
+
+.header__stats-calendar:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.stats-calendar__title {
+    margin-left: 0.5em;
+}
+
+.stats-calendar__img {
+    height: 70%;
+}
+
+.header__stats-tankers {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    margin-right: 1em;
+}
+
+.stats-tankers__amount {
+    margin-left: 0.5em;
+}
+
+.stats__tanker-img {
+    height: 110%;
+}
+
+
+.header__stats-fuel-stations {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.stats-fuel-stations__amount {
+    margin-left: 0.5em;
+}
+
+.stats__fuel-station-img {
+    height: 90%;
+}
+
+.header__stats-delivery {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease-out;
+}
+
+.header__stats-delivery:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.stats-delivery__title {
+    margin-left: 0.5em;
+}
+
+.stats-delivery__img {
+    height: 90%;
+}
+
+.stats-wrapper {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__settings-title {
+    margin-right: 0.5em;
+
+    font-size: 2rem;
+}
+
+.header__settings {
+    margin: 0;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    transition: opacity 0.2s ease-out;
+}
+
+.header__settings-img {
+    height: 90%;
+}
+
+.header__settings:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.facilities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 25%;
+}
+
+.bank {
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-right: 5%;
+}
+
+.bank__stats {
+    height: 25%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.stats-cash {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-cash__amount {
+    font-size: 1.5rem;
+}
+
+.stats-fuel__amount {
+    font-size: 1.5rem;
+}
+
+.stats-cash__img {
+    height: 100%;
+    margin-left: 0.5em;
+}
+
+.bank__img {
+    height: 85%;
+
+    transition: opacity 0.2s ease-out;
+}
+
+.bank__img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.fuel-storage {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fuel-storage__stats {
+    height: 25%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: -5%;
+}
+
+.stats-fuel {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-fuel__img {
+    height: 100%;
+}
+
+.fuel-storage__wrapper {
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.fuel-storage__storage-img {
+    height: 100%;
+
+    transition: opacity 0.2s ease-out;
+}
+
+.fuel-storage__storage-img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.fuel-storage__rocket-img {
+    height: 70%;
+
+    transition: opacity 0.2s ease-out;
+}
+
+.fuel-storage__rocket-img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.fuel-stations-component {
+    width: 96%;
+    height: 50%;
+
+    margin-top: 2%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fuel-stations__button-left {
+    transform: rotate(180deg);
+    height: 15%;
+    padding: 1%;
+
+    background: rgba(237, 238, 255, 0.2);
+    box-shadow: 0 -2px 2px 2px rgba(31, 38, 135, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+
+    transition: opacity 0.2s ease-out;
+}
+
+.fuel-stations__button-left:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.button-left__img {
+    height: 100%;
+}
+
+.fuel-stations__button-right {
+    height: 15%;
+
+    padding: 1%;
+
+    background: rgba(237, 238, 255, 0.2);
+    box-shadow: 0 2px 2px 2px rgba(31, 38, 135, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    
+    transition: opacity 0.2s ease-out;
+}
+
+.fuel-stations__button-right:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.fuel-stations {
+    height: 100%;
+    width: 70%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background: rgba(237, 238, 255, 0.2);
+    box-shadow: 0 2px 2px 2px rgba(31, 38, 135, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+
+    margin: 0 2%;
+    padding: 1% 0;
+}
+
+.fuel-station {
+    width: 16%;
+    height: 40%;
+    margin: 1%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.fuel-station__stats {
+    height: 25%;
+    width: 110%;
+    margin-bottom: 5%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.fuel-station__img {
+    height: 80%;
+
+    transition: opacity 0.3s ease-out;
+}
+
+.fuel-station__img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.stats-petrol {
+    width: 50%;
+    margin-left: 0.5em;
+
+    display: flex;
+    align-items: center;
+}
+
+.stats-petrol__img {
+    height: 100%;
+    margin-left: 0.5em;
+}
+
