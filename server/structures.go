@@ -3,7 +3,7 @@ package server
 import "time"
 
 type Config struct {
-	Deliveries            []int32 //доставки по месяцам(только это можно изменять)
+	Deliveries            []int32
 	StorageFuelBalance    int32
 	StationFuelBalance    int32
 	StationsAmount        int32

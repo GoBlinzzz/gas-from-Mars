@@ -61,6 +61,8 @@ func main() {
 		fmt.Println(status.MoneyBalance, status.FuelBalance)
 	}
 
+	router.HandleFunc("/config", server.GetConfig).Methods("POST")
+
 	//router.HandleFunc("/api/search", search).Methods("GET", "OPTIONS")
 	//router.HandleFunc("/api/add-to-cart", addToCart).Methods("POST", "OPTIONS")
 	//router.HandleFunc("/api/cart", getCart).Methods("GET", "OPTIONS")

@@ -1,42 +1,22 @@
 package server
 
 import (
-	"time"
+	"encoding/json"
+	"net/http"
 )
 
-func GetConfig() (config Config) {
-	config = Config{
-		Deliveries:            []int32{1000, 1000, 2500, 1400, 5000, 3000, 200, 800, 450, 1000, 250, 450},
-		StorageFuelBalance:    1000,
-		StationFuelBalance:    500,
-		StationsAmount:        2,
-		TankersAmount:         0,
-		AmountOfClientsPerDay: 20,
-		FuelAmountPerClient:   50,
-		PriceList: PriceList{
-			StationMaintaining:      1000,
-			FillingPlaceMaintaining: 70,
-			TankerPrice:             200,
-			FillingPlacePrice:       800,
-			OrdinaryProfit:          150,
-		},
-		TimeList: TimeList{
-			GasDelivery:          300,
-			CarService:           1,
-			BuildingStation:      20,
-			BuildingFillingPlace: 6,
-		},
-		Salaries: Salaries{
-			Manager:       2500,
-			Cashier:       2000,
-			Guard:         1700,
-			PumpAttendant: 1300,
-		},
-		FillingPlacesRatio: 2,
-		CashierCapacity:    3,
-		EquivalentOfMonth:  time.Second * 10,
+func GetConfig(w http.ResponseWriter, r *http.Request) Config {
+	defer r.Body.Close()
+
+	if r.Method == "OPTIONS" {
+		return
 	}
-	return
+
+	decoder := json.NewDecoder(r.Body)
+	var config Config
+	_ = decoder.Decode(&config)
+
+	return config
 }
 
 func UpdateConfig(config *Config) {
