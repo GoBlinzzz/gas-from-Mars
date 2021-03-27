@@ -1,0 +1,103 @@
+.config-page {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(237, 238, 240, 1);
+}
+
+.config-page__content {
+    margin: 1% 0;
+    width: 60%;
+    height: 80%;
+
+    padding-bottom: 2%;
+
+    background: rgba(77, 104, 156, 0.3);
+    box-shadow: 0 2px 4px 2px rgba(31, 38, 135, 0.4);
+    border-radius: 30px;
+    border: 2px solid rgba(77, 104, 156, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.config-page__title {
+    height: 20%;
+
+    text-shadow: 1px 1px 1px black;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.config-page__description {
+    width: 80%;
+    height: 70%;
+}
+
+.config-page__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: justify-all;
+
+    font-size: 20px;
+}
+
+.description__container-img {
+    display: flex;
+    height: 80%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.description__img {
+    height: 80%;
+}
+
+.file-input__container {
+    width: 80%;
+}
+
+.submit-config__button {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5em;
+
+    font-size: 30px;
+
+    background: rgb(246, 192, 21);
+    box-shadow: 0 2px 2px 1px rgba(31, 38, 135, 0.3);
+    border: 3px solid rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+
+    transition: opacity 0.3s ease-out;
+}
+
+.submit-config__button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.file-input__container {
+    font-size: 20px;
+
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.file-input__input {
+}
